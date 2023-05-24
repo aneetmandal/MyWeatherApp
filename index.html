@@ -62,8 +62,8 @@
                             <h4 class="my-0 fw-normal">Temperatures</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$0<small
-                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small
+                                    class="text-body-secondary fw-light"><span>&#8451</span></small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Temperature is <span id="temp"></span></li>
                                 <li>Max Temperature is <span id="max_temp"></span></li>
@@ -77,11 +77,11 @@
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Pro</h4>
+                            <h4 class="my-0 fw-normal">Humidity Info</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$15<small
-                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small
+                                    class="text-body-secondary fw-light"> %</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Cloud PCT is <span id="cloud_pct"></span></li>
                                 <li>Humidity is <span id="humidity"></span></li>
@@ -94,16 +94,16 @@
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary">
                         <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                            <h4 class="my-0 fw-normal">Sun Info</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$29<small
-                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
+                                    class="text-body-secondary fw-light"> km/hr</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>sunset is <span id="sunset"></span></li>
                                 <li>sunrise is <span id="sunrise"></span></li>
                                 <li>Wind speed is <span id="wind_speed"></span></li>
-                                <li>Wind deg is <span id="wind_degrees"></span></li>
+                                <!-- <li>Wind deg is <span id="wind_degrees"></span></li> -->
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
                         </div>
@@ -133,18 +133,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" class="text-start">Kolkata</th>
+                            <th scope="row" class="text-start" id="CCU">Kolkata</th>
 
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
+                            <td><span id="K_cloud_pct"></span></td>
+                            <td><span id="K_temp"></span></td>
+                            <td><span id="K_feels_like"></span></td>
+                            <td><span id="K_humidity"></span></td>
+                            <td><span id="K_min_temp"></span></td>
+                            <td><span id="K_max_temp"></span></td>
+                            <td><span id="K_wind_speed"></span></td>
+                            <td><span id="K_wind_degrees"></span></td>
+                            <td><span id="K_sunset"></span></td>
+                            <td><span id="K_sunrise"></span></td>
                             <td></td>
 
                             <!-- <td><svg class="bi" width="24" height="24">
@@ -158,18 +158,18 @@
                                 </svg></td> -->
                         </tr>
                         <tr>
-                            <th scope="row" class="text-start">Brisbane</th>
+                            <th scope="row" class="text-start" id="BNE">Brisbane</th>
 
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
+                            <td><span id="B_cloud_pct"></span></td>
+                            <td><span id="B_temp"></span></td>
+                            <td><span id="B_feels_like"></span></td>
+                            <td><span id="B_humidity"></span></td>
+                            <td><span id="B_min_temp"></span></td>
+                            <td><span id="B_max_temp"></span></td>
+                            <td><span id="B_wind_speed"></span></td>
+                            <td><span id="B_wind_degrees"></span></td>
+                            <td><span id="B_sunset"></span></td>
+                            <td><span id="B_sunrise"></span></td>
                             <td></td>
                             <!-- <td><svg class="bi" width="24" height="24">
                                     <use xlink:href="#check"></use>
@@ -182,18 +182,18 @@
 
                     <tbody>
                         <tr>
-                            <th scope="row" class="text-start">Mumbai</th>
+                            <th scope="row" class="text-start" id="BOM">Mumbai</th>
 
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
+                            <td><span id="M_cloud_pct"></span></td>
+                            <td><span id="M_temp"></span></td>
+                            <td><span id="M_feels_like"></span></td>
+                            <td><span id="M_humidity"></span></td>
+                            <td><span id="M_min_temp"></span></td>
+                            <td><span id="M_max_temp"></span></td>
+                            <td><span id="M_wind_speed"></span></td>
+                            <td><span id="M_wind_degrees"></span></td>
+                            <td><span id="M_sunset"></span></td>
+                            <td><span id="M_sunrise"></span></td>
                             <td></td>
 
                             <!-- <td><svg class="bi" width="24" height="24">
@@ -207,18 +207,18 @@
                                 </svg></td> -->
                         </tr>
                         <tr>
-                            <th scope="row" class="text-start">Adelaide</th>
+                            <th scope="row" class="text-start" id="ADL">Adelaide</th>
 
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
+                            <td><span id="A_cloud_pct"></span></td>
+                            <td><span id="A_temp"></span></td>
+                            <td><span id="A_feels_like"></span></td>
+                            <td><span id="A_humidity"></span></td>
+                            <td><span id="A_min_temp"></span></td>
+                            <td><span id="A_max_temp"></span></td>
+                            <td><span id="A_wind_speed"></span></td>
+                            <td><span id="A_wind_degrees"></span></td>
+                            <td><span id="A_sunset"></span></td>
+                            <td><span id="A_sunrise"></span></td>
                             <td></td>
 
                             <!-- <td></td>
